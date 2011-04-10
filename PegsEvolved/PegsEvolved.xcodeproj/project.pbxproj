@@ -1,0 +1,393 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77055B4D135267DD0026A7B6 /* Level6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 77055B4C135267DD0026A7B6 /* Level6.txt */; };
+		77055B54135276330026A7B6 /* ChoosePegFWX.png in Resources */ = {isa = PBXBuildFile; fileRef = 77055B53135276330026A7B6 /* ChoosePegFWX.png */; };
+		7716721C134FCD1B00C3A878 /* Original0.png in Resources */ = {isa = PBXBuildFile; fileRef = 77167214134FCD1B00C3A878 /* Original0.png */; };
+		7716721D134FCD1B00C3A878 /* Original1.png in Resources */ = {isa = PBXBuildFile; fileRef = 77167215134FCD1B00C3A878 /* Original1.png */; };
+		7716721E134FCD1B00C3A878 /* Original2.png in Resources */ = {isa = PBXBuildFile; fileRef = 77167216134FCD1B00C3A878 /* Original2.png */; };
+		7716721F134FCD1B00C3A878 /* Original3.png in Resources */ = {isa = PBXBuildFile; fileRef = 77167217134FCD1B00C3A878 /* Original3.png */; };
+		77167220134FCD1B00C3A878 /* Original4.png in Resources */ = {isa = PBXBuildFile; fileRef = 77167218134FCD1B00C3A878 /* Original4.png */; };
+		77167221134FCD1B00C3A878 /* Original5.png in Resources */ = {isa = PBXBuildFile; fileRef = 77167219134FCD1B00C3A878 /* Original5.png */; };
+		77167222134FCD1B00C3A878 /* Original6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7716721A134FCD1B00C3A878 /* Original6.png */; };
+		77167223134FCD1B00C3A878 /* Original7.png in Resources */ = {isa = PBXBuildFile; fileRef = 7716721B134FCD1B00C3A878 /* Original7.png */; };
+		77167226134FD74000C3A878 /* Level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 77167225134FD74000C3A878 /* Level1.txt */; };
+		77167228134FD7F700C3A878 /* Level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 77167227134FD7F700C3A878 /* Level2.txt */; };
+		7716722C134FD84500C3A878 /* Level3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7716722B134FD84500C3A878 /* Level3.txt */; };
+		7716722E134FD88000C3A878 /* Level4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7716722D134FD88000C3A878 /* Level4.txt */; };
+		77167230134FD90E00C3A878 /* Level5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7716722F134FD90E00C3A878 /* Level5.txt */; };
+		774E1E2D1350082F00A0FC0E /* DirectionalPadFWX.png in Resources */ = {isa = PBXBuildFile; fileRef = 774E1E2C1350082F00A0FC0E /* DirectionalPadFWX.png */; };
+		77BF8C39134E7E0C0020FCD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BF8C38134E7E0C0020FCD9 /* UIKit.framework */; };
+		77BF8C3B134E7E0C0020FCD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BF8C3A134E7E0C0020FCD9 /* Foundation.framework */; };
+		77BF8C3D134E7E0C0020FCD9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BF8C3C134E7E0C0020FCD9 /* CoreGraphics.framework */; };
+		77BF8C43134E7E0D0020FCD9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77BF8C41134E7E0D0020FCD9 /* InfoPlist.strings */; };
+		77BF8C46134E7E0D0020FCD9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BF8C45134E7E0D0020FCD9 /* main.m */; };
+		77BF8C49134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BF8C48134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.m */; };
+		77BF8C4C134E7E0D0020FCD9 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77BF8C4A134E7E0D0020FCD9 /* MainWindow.xib */; };
+		77BF8C55134E7EB30020FCD9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BF8C53134E7EB30020FCD9 /* OpenGLES.framework */; };
+		77BF8C56134E7EB30020FCD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BF8C54134E7EB30020FCD9 /* QuartzCore.framework */; };
+		77BF8C59134E7F140020FCD9 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BF8C58134E7F140020FCD9 /* EAGLView.m */; };
+		77BF8C62134E93BB0020FCD9 /* EAGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BF8C61134E93BB0020FCD9 /* EAGLViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77055B4C135267DD0026A7B6 /* Level6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level6.txt; sourceTree = "<group>"; };
+		77055B53135276330026A7B6 /* ChoosePegFWX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChoosePegFWX.png; path = ../GUI/ChoosePegFWX.png; sourceTree = "<group>"; };
+		77167214134FCD1B00C3A878 /* Original0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original0.png; sourceTree = "<group>"; };
+		77167215134FCD1B00C3A878 /* Original1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original1.png; sourceTree = "<group>"; };
+		77167216134FCD1B00C3A878 /* Original2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original2.png; sourceTree = "<group>"; };
+		77167217134FCD1B00C3A878 /* Original3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original3.png; sourceTree = "<group>"; };
+		77167218134FCD1B00C3A878 /* Original4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original4.png; sourceTree = "<group>"; };
+		77167219134FCD1B00C3A878 /* Original5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original5.png; sourceTree = "<group>"; };
+		7716721A134FCD1B00C3A878 /* Original6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original6.png; sourceTree = "<group>"; };
+		7716721B134FCD1B00C3A878 /* Original7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original7.png; sourceTree = "<group>"; };
+		77167225134FD74000C3A878 /* Level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level1.txt; sourceTree = "<group>"; };
+		77167227134FD7F700C3A878 /* Level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level2.txt; sourceTree = "<group>"; };
+		7716722B134FD84500C3A878 /* Level3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level3.txt; sourceTree = "<group>"; };
+		7716722D134FD88000C3A878 /* Level4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level4.txt; sourceTree = "<group>"; };
+		7716722F134FD90E00C3A878 /* Level5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level5.txt; sourceTree = "<group>"; };
+		774E1E2C1350082F00A0FC0E /* DirectionalPadFWX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DirectionalPadFWX.png; path = ../GUI/DirectionalPadFWX.png; sourceTree = "<group>"; };
+		77BF8C34134E7E0C0020FCD9 /* PegsEvolved.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PegsEvolved.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77BF8C38134E7E0C0020FCD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		77BF8C3A134E7E0C0020FCD9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		77BF8C3C134E7E0C0020FCD9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		77BF8C40134E7E0D0020FCD9 /* PegsEvolved-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PegsEvolved-Info.plist"; sourceTree = "<group>"; };
+		77BF8C42134E7E0D0020FCD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		77BF8C44134E7E0D0020FCD9 /* PegsEvolved-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PegsEvolved-Prefix.pch"; sourceTree = "<group>"; };
+		77BF8C45134E7E0D0020FCD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		77BF8C47134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PegsEvolvedAppDelegate.h; sourceTree = "<group>"; };
+		77BF8C48134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PegsEvolvedAppDelegate.m; sourceTree = "<group>"; };
+		77BF8C4B134E7E0D0020FCD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		77BF8C53134E7EB30020FCD9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		77BF8C54134E7EB30020FCD9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		77BF8C57134E7F140020FCD9 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		77BF8C58134E7F140020FCD9 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		77BF8C60134E93BB0020FCD9 /* EAGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLViewController.h; sourceTree = "<group>"; };
+		77BF8C61134E93BB0020FCD9 /* EAGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77BF8C31134E7E0C0020FCD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BF8C39134E7E0C0020FCD9 /* UIKit.framework in Frameworks */,
+				77BF8C3B134E7E0C0020FCD9 /* Foundation.framework in Frameworks */,
+				77BF8C3D134E7E0C0020FCD9 /* CoreGraphics.framework in Frameworks */,
+				77BF8C55134E7EB30020FCD9 /* OpenGLES.framework in Frameworks */,
+				77BF8C56134E7EB30020FCD9 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77167224134FD6F400C3A878 /* Levels */ = {
+			isa = PBXGroup;
+			children = (
+				77167225134FD74000C3A878 /* Level1.txt */,
+				77167227134FD7F700C3A878 /* Level2.txt */,
+				7716722B134FD84500C3A878 /* Level3.txt */,
+				7716722D134FD88000C3A878 /* Level4.txt */,
+				7716722F134FD90E00C3A878 /* Level5.txt */,
+				77055B4C135267DD0026A7B6 /* Level6.txt */,
+			);
+			name = Levels;
+			sourceTree = "<group>";
+		};
+		77283F92134EA2A70074A10A /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				77283F9B134EA2A70074A10A /* Original */,
+			);
+			name = Themes;
+			path = ../Themes;
+			sourceTree = "<group>";
+		};
+		77283F9B134EA2A70074A10A /* Original */ = {
+			isa = PBXGroup;
+			children = (
+				77167214134FCD1B00C3A878 /* Original0.png */,
+				77167215134FCD1B00C3A878 /* Original1.png */,
+				77167216134FCD1B00C3A878 /* Original2.png */,
+				77167217134FCD1B00C3A878 /* Original3.png */,
+				77167218134FCD1B00C3A878 /* Original4.png */,
+				77167219134FCD1B00C3A878 /* Original5.png */,
+				7716721A134FCD1B00C3A878 /* Original6.png */,
+				7716721B134FCD1B00C3A878 /* Original7.png */,
+			);
+			path = Original;
+			sourceTree = "<group>";
+		};
+		774E1E22134FFE6B00A0FC0E /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				77055B53135276330026A7B6 /* ChoosePegFWX.png */,
+				774E1E2C1350082F00A0FC0E /* DirectionalPadFWX.png */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		77BF8C29134E7E0C0020FCD9 = {
+			isa = PBXGroup;
+			children = (
+				77167224134FD6F400C3A878 /* Levels */,
+				77BF8C3E134E7E0C0020FCD9 /* PegsEvolved */,
+				77BF8C52134E7E480020FCD9 /* Resources */,
+				77BF8C37134E7E0C0020FCD9 /* Frameworks */,
+				77BF8C35134E7E0C0020FCD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77BF8C35134E7E0C0020FCD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77BF8C34134E7E0C0020FCD9 /* PegsEvolved.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77BF8C37134E7E0C0020FCD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77BF8C53134E7EB30020FCD9 /* OpenGLES.framework */,
+				77BF8C54134E7EB30020FCD9 /* QuartzCore.framework */,
+				77BF8C38134E7E0C0020FCD9 /* UIKit.framework */,
+				77BF8C3A134E7E0C0020FCD9 /* Foundation.framework */,
+				77BF8C3C134E7E0C0020FCD9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77BF8C3E134E7E0C0020FCD9 /* PegsEvolved */ = {
+			isa = PBXGroup;
+			children = (
+				77BF8C47134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.h */,
+				77BF8C48134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.m */,
+				77BF8C57134E7F140020FCD9 /* EAGLView.h */,
+				77BF8C58134E7F140020FCD9 /* EAGLView.m */,
+				77BF8C60134E93BB0020FCD9 /* EAGLViewController.h */,
+				77BF8C61134E93BB0020FCD9 /* EAGLViewController.m */,
+			);
+			path = PegsEvolved;
+			sourceTree = "<group>";
+		};
+		77BF8C3F134E7E0D0020FCD9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				77BF8C40134E7E0D0020FCD9 /* PegsEvolved-Info.plist */,
+				77BF8C41134E7E0D0020FCD9 /* InfoPlist.strings */,
+				77BF8C44134E7E0D0020FCD9 /* PegsEvolved-Prefix.pch */,
+				77BF8C45134E7E0D0020FCD9 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = PegsEvolved;
+			sourceTree = "<group>";
+		};
+		77BF8C52134E7E480020FCD9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				774E1E22134FFE6B00A0FC0E /* GUI */,
+				77283F92134EA2A70074A10A /* Themes */,
+				77BF8C3F134E7E0D0020FCD9 /* Supporting Files */,
+				77BF8C4A134E7E0D0020FCD9 /* MainWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77BF8C33134E7E0C0020FCD9 /* PegsEvolved */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77BF8C4F134E7E0D0020FCD9 /* Build configuration list for PBXNativeTarget "PegsEvolved" */;
+			buildPhases = (
+				77BF8C30134E7E0C0020FCD9 /* Sources */,
+				77BF8C31134E7E0C0020FCD9 /* Frameworks */,
+				77BF8C32134E7E0C0020FCD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PegsEvolved;
+			productName = PegsEvolved;
+			productReference = 77BF8C34134E7E0C0020FCD9 /* PegsEvolved.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77BF8C2B134E7E0C0020FCD9 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 77BF8C2E134E7E0C0020FCD9 /* Build configuration list for PBXProject "PegsEvolved" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 77BF8C29134E7E0C0020FCD9;
+			productRefGroup = 77BF8C35134E7E0C0020FCD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77BF8C33134E7E0C0020FCD9 /* PegsEvolved */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77BF8C32134E7E0C0020FCD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BF8C43134E7E0D0020FCD9 /* InfoPlist.strings in Resources */,
+				77BF8C4C134E7E0D0020FCD9 /* MainWindow.xib in Resources */,
+				7716721C134FCD1B00C3A878 /* Original0.png in Resources */,
+				7716721D134FCD1B00C3A878 /* Original1.png in Resources */,
+				7716721E134FCD1B00C3A878 /* Original2.png in Resources */,
+				7716721F134FCD1B00C3A878 /* Original3.png in Resources */,
+				77167220134FCD1B00C3A878 /* Original4.png in Resources */,
+				77167221134FCD1B00C3A878 /* Original5.png in Resources */,
+				77167222134FCD1B00C3A878 /* Original6.png in Resources */,
+				77167223134FCD1B00C3A878 /* Original7.png in Resources */,
+				77167226134FD74000C3A878 /* Level1.txt in Resources */,
+				77167228134FD7F700C3A878 /* Level2.txt in Resources */,
+				7716722C134FD84500C3A878 /* Level3.txt in Resources */,
+				7716722E134FD88000C3A878 /* Level4.txt in Resources */,
+				77167230134FD90E00C3A878 /* Level5.txt in Resources */,
+				774E1E2D1350082F00A0FC0E /* DirectionalPadFWX.png in Resources */,
+				77055B4D135267DD0026A7B6 /* Level6.txt in Resources */,
+				77055B54135276330026A7B6 /* ChoosePegFWX.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77BF8C30134E7E0C0020FCD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77BF8C46134E7E0D0020FCD9 /* main.m in Sources */,
+				77BF8C49134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.m in Sources */,
+				77BF8C59134E7F140020FCD9 /* EAGLView.m in Sources */,
+				77BF8C62134E93BB0020FCD9 /* EAGLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77BF8C41134E7E0D0020FCD9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BF8C42134E7E0D0020FCD9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		77BF8C4A134E7E0D0020FCD9 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77BF8C4B134E7E0D0020FCD9 /* en */,
+			);
+			name = MainWindow.xib;
+			path = PegsEvolved;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77BF8C4D134E7E0D0020FCD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos4.3;
+			};
+			name = Debug;
+		};
+		77BF8C4E134E7E0D0020FCD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos4.3;
+			};
+			name = Release;
+		};
+		77BF8C50134E7E0D0020FCD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PegsEvolved/PegsEvolved-Prefix.pch";
+				INFOPLIST_FILE = "PegsEvolved/PegsEvolved-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		77BF8C51134E7E0D0020FCD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PegsEvolved/PegsEvolved-Prefix.pch";
+				INFOPLIST_FILE = "PegsEvolved/PegsEvolved-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77BF8C2E134E7E0C0020FCD9 /* Build configuration list for PBXProject "PegsEvolved" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BF8C4D134E7E0D0020FCD9 /* Debug */,
+				77BF8C4E134E7E0D0020FCD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77BF8C4F134E7E0D0020FCD9 /* Build configuration list for PBXNativeTarget "PegsEvolved" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77BF8C50134E7E0D0020FCD9 /* Debug */,
+				77BF8C51134E7E0D0020FCD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 77BF8C2B134E7E0C0020FCD9 /* Project object */;
+}
