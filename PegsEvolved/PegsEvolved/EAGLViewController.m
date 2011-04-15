@@ -11,23 +11,30 @@
 @implementation EAGLViewController
 @synthesize eaglView;
 
-- (id)init{
+- (id)initWithTheme:(NSString *)theme repeatRate:(NSTimeInterval)repeatRate{
     self = [super init];
     if(self){
-        characterLocationX = 0;
-        characterLocationY = 0;
-        whichButtonDown = B_NONE;
-        movementInterval = 0.15f;
-        
-        [self readFile:@"Level5"];
-        self.eaglView = [[EAGLView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f) EAGLViewController:self];
+        self.eaglView = [[EAGLView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 480.0f) EAGLViewController:self themeName: theme];
         [self.view addSubview: eaglView];
+        
+        movementInterval = repeatRate;
     }
     return self; 
 }
 
+- (void)loadLevel:(NSString *)fileName{
+    [self resetVariables];
+    [self readFile: fileName];
+}
+
+- (void)resetVariables{
+    characterLocationX = 0;
+    characterLocationY = 0;
+    whichButtonDown = B_NONE;
+    isSelectingPeg = NO;
+}
+
 - (void)readFile:(NSString *)fileName{
-	
 	NSString *path = [[NSBundle mainBundle] pathForResource:fileName ofType:@"txt"];
 	NSData *data = [NSData dataWithContentsOfFile: path];
 	NSString *string = [[NSString alloc] initWithData:data encoding: NSUTF8StringEncoding];
@@ -82,7 +89,9 @@
                         [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX, characterLocationY - 1) newNumber: 0];
                         characterLocationY--;
                     }else if(whatsThere == P_PLUS){
-                        NSLog(@"Combining Two Plusses");
+                        isSelectingPeg = YES;
+                        selectPegOffset = CGPointMake(0, -2);
+                        whichButtonDown = B_NONE;
                     }
                 }else if(whatsBehindWhatsThere == 2){
                     if(whatsThere == P_SQUARE){
@@ -117,7 +126,9 @@
                         [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX, characterLocationY + 1) newNumber: 0];
                         characterLocationY++;
                     }else if(whatsThere == P_PLUS){
-                        NSLog(@"Combining Two Plusses");
+                        isSelectingPeg = YES;
+                        selectPegOffset = CGPointMake(0, 2);
+                        whichButtonDown = B_NONE;
                     }
                 }else if(whatsBehindWhatsThere == 2){
                     if(whatsThere == P_SQUARE){
@@ -153,7 +164,9 @@
                         [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX - 1, characterLocationY) newNumber: 0];
                         characterLocationX--;
                     }else if(whatsThere == P_PLUS){
-                        NSLog(@"Combining Two Plusses");
+                        isSelectingPeg = YES;
+                        selectPegOffset = CGPointMake(-2, 0);
+                        whichButtonDown = B_NONE;
                     }
                 }else if(whatsBehindWhatsThere == 2){
                     if(whatsThere == P_SQUARE){
@@ -188,7 +201,9 @@
                         [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + 1, characterLocationY) newNumber: 0];
                         characterLocationX++;
                     }else if(whatsThere == P_PLUS){
-                        NSLog(@"Combining Two Plusses");
+                        isSelectingPeg = YES;
+                        selectPegOffset = CGPointMake(2, 0);
+                        whichButtonDown = B_NONE;
                     }
                 }else if(whatsBehindWhatsThere == 2){
                     if(whatsThere == P_SQUARE){
@@ -206,6 +221,7 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
 	CGPoint notLocation = [[touches anyObject] locationInView: self.view];
 	CGPoint loc = CGPointMake(notLocation.y, notLocation.x);
     printf("\nTouch at: (%i, %i)", (int)loc.x, (int)loc.y);
@@ -227,7 +243,33 @@
             movementTimer = [NSTimer scheduledTimerWithTimeInterval:movementInterval target:self selector:@selector(move) userInfo:nil repeats:YES];
         }
     }else{
-        
+        if(isSelectingPeg && loc.x > 112.0f && loc.x < 368.0f && loc.y > 128.0f && loc.y < 192.0f){
+            if(loc.x < 176.0f){             //Square
+                [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + selectPegOffset.x, characterLocationY + selectPegOffset.y) newNumber: P_SQUARE];
+                [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + selectPegOffset.x / 2, characterLocationY + selectPegOffset.y / 2) newNumber: 0];
+                characterLocationX += selectPegOffset.x / 2;
+                characterLocationY += selectPegOffset.y / 2;
+                isSelectingPeg = NO;
+            }else if(loc.x < 240.0f){       //Circle
+                [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + selectPegOffset.x, characterLocationY + selectPegOffset.y) newNumber: P_CIRCLE];
+                [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + selectPegOffset.x / 2, characterLocationY + selectPegOffset.y / 2) newNumber: 0];
+                characterLocationX += selectPegOffset.x / 2;
+                characterLocationY += selectPegOffset.y / 2;
+                isSelectingPeg = NO;
+            }else if(loc.x < 304.0f){       //Triangle
+                [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + selectPegOffset.x, characterLocationY + selectPegOffset.y) newNumber: P_TRIANGLE];
+                [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + selectPegOffset.x / 2, characterLocationY + selectPegOffset.y / 2) newNumber: 0];
+                characterLocationX += selectPegOffset.x / 2;
+                characterLocationY += selectPegOffset.y / 2;
+                isSelectingPeg = NO;
+            }else{                          //Plus
+                [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + selectPegOffset.x, characterLocationY + selectPegOffset.y) newNumber: P_PLUS];
+                [self setMapNumberWithCGPointLocation: CGPointMake(characterLocationX + selectPegOffset.x / 2, characterLocationY + selectPegOffset.y / 2) newNumber: 0];
+                characterLocationX += selectPegOffset.x / 2;
+                characterLocationY += selectPegOffset.y / 2;
+                isSelectingPeg = NO;
+            }
+        }
     }
 }
 
@@ -267,6 +309,10 @@
 
 - (int)getWhichButtonDown{
     return whichButtonDown;
+}
+
+- (BOOL)getIsSelectingPeg{
+    return isSelectingPeg;
 }
 
 - (void)dealloc

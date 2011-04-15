@@ -39,11 +39,18 @@ enum{
     int whichButtonDown;
     NSTimer *movementTimer;
     NSTimeInterval movementInterval;
+    
+    BOOL isSelectingPeg;
+    CGPoint selectPegOffset;
 }
 
 @property (nonatomic, retain) EAGLView *eaglView;
 
-- (id)init;
+- (id)initWithTheme:(NSString *)theme repeatRate:(NSTimeInterval)repeatRate;
+
+- (void)resetVariables;
+- (void)loadLevel:(NSString *)fileName;
+
 - (void)readFile:(NSString *)fileName;
 
 - (void)move;
@@ -53,5 +60,6 @@ enum{
 - (CGPoint)getPlayerLocationGL;
 - (CGPoint)getPlayerLocation;
 - (int)getWhichButtonDown;
+- (BOOL)getIsSelectingPeg;
 
 @end

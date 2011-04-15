@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class EAGLViewController;
-
 @interface PegsEvolvedAppDelegate : NSObject <UIApplicationDelegate> {
-    EAGLViewController *eaglViewController;
+    UINavigationController *navController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) EAGLViewController *eaglViewController;
+@property (nonatomic, retain) IBOutlet UINavigationController *navController;
 
 @end

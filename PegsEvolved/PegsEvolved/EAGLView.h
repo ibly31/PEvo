@@ -25,7 +25,7 @@
     GLuint viewRenderbuffer, viewFramebuffer;
     
     GLuint textures[8];
-    GLuint guiTextures[1];
+    GLuint guiTextures[2];
     
     float buttonTexCoordsLeft[5];
     
@@ -38,14 +38,14 @@
 @property NSTimeInterval animationInterval;
 @property (nonatomic, retain) EAGLViewController *eaglViewController;
 
-- (id)initWithFrame:(CGRect)frame EAGLViewController:(EAGLViewController *)_eaglViewController;
+- (id)initWithFrame:(CGRect)frame EAGLViewController:(EAGLViewController *)_eaglViewController themeName:(NSString *)themeName;
 
 - (void)startAnimation;
 - (void)stopAnimation;
 
 - (void)Update;
 - (void)Draw;
-- (void)LoadContent;
+- (void)LoadContent:(NSString *)themeName;
 
 - (void)createTexture: (GLuint)location fileName: (NSString *)fileName;
 

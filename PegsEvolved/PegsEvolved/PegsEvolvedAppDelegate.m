@@ -7,17 +7,18 @@
 //
 
 #import "PegsEvolvedAppDelegate.h"
-#import "EAGLViewController.h"
+#import "MainMenuViewController.h"
 
 @implementation PegsEvolvedAppDelegate
 @synthesize window=_window;
-@synthesize eaglViewController;
+@synthesize navController;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
-    self.eaglViewController = [[EAGLViewController alloc] init];
-    [_window addSubview: eaglViewController.view];
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    
+    MainMenuViewController *mmvc = [[MainMenuViewController alloc] initWithNibName:@"MainMenuViewController" bundle:nil];
+    self.navController = [[UINavigationController alloc] initWithRootViewController: mmvc];
+    [mmvc release];
+    [_window addSubview: navController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

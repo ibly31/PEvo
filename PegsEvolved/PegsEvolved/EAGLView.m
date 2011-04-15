@@ -33,7 +33,7 @@
     return [CAEAGLLayer class];
 }
 
-- (id)initWithFrame:(CGRect)frame EAGLViewController:(EAGLViewController *)_eaglViewController{
+- (id)initWithFrame:(CGRect)frame EAGLViewController:(EAGLViewController *)_eaglViewController themeName:(NSString *)themeName{
     if ((self = [super initWithFrame:frame])){
         self.eaglViewController = _eaglViewController;
         CAEAGLLayer *eaglLayer = (CAEAGLLayer *)self.layer;
@@ -52,7 +52,7 @@
         self.contentScaleFactor = 2.0f;
         
         animationInterval = 1.0 / 60.0;
-        [self LoadContent];
+        [self LoadContent: themeName];
         [self startAnimation];
         
         [EAGLContext setCurrentContext:context];
@@ -62,14 +62,15 @@
 	}
     return self;
 }
-- (void)LoadContent{
+- (void)LoadContent:(NSString *)themeName{
     glGenTextures(7, &textures[0]);
     for(int x = 0; x < 8; x++){
-        [self createTexture:textures[x] fileName: [NSString stringWithFormat: @"Original%i", x]];
+        [self createTexture:textures[x] fileName: [NSString stringWithFormat: @"%@%i", themeName,x]];
     }
     
-    glGenTextures(1, &guiTextures[0]);
+    glGenTextures(2, &guiTextures[0]);
     [self createTexture:guiTextures[0] fileName:@"DirectionalPadFWX"];
+    [self createTexture:guiTextures[1] fileName:@"ChoosePegFWX"];
     for(int x = 0; x < 5; x++){
         buttonTexCoordsLeft[x] = (x * 128.0f) / 1024.0f;
     }
@@ -120,7 +121,6 @@
             glPushMatrix();
                 glTranslatef(x * 40.0f + 20.0f, (8 - y) * 40.0f - 20.0f, 0.0f);
                 glBindTexture(GL_TEXTURE_2D, textures[[eaglViewController getMapNumberWithCGPointLocation: CGPointMake(x, y)]]);
-                //glBindTexture(GL_TEXTURE_2D, textures[]);
                 glVertexPointer(2, GL_FLOAT, 0, verts);
                 glTexCoordPointer(2, GL_FLOAT, 0, texCoords);	
                 glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
@@ -152,14 +152,61 @@
 		-64.0f, -64.0f,
 		64.0f, -64.0f
 	};
+
+    static const GLfloat selectTexCoords[] = {
+        0.0f, 1.0f,
+        1.0f, 1.0f,
+        0.0f, 0.0f,
+        1.0f, 0.0f
+    };
+    static const GLfloat fadeVerts[] = {
+        -240.0f, 160.0f,
+        240.0f, 160.0f,
+        -240.0f, -160.0f,
+        240.0f, -160.0f
+    };
+    static const GLfloat selectVerts[] = {
+        -128.0f, 32.0f,
+        128.0f, 32.0f,
+        -128.0f, -32.0f,
+        128.0f, -32.0f
+    };
     
-    glPushMatrix();
-        glTranslatef(412.0f, 68.0f, 0.0f);
-        glBindTexture(GL_TEXTURE_2D, guiTextures[0]);
-        glVertexPointer(2, GL_FLOAT, 0, guiVerts);
-        glTexCoordPointer(2, GL_FLOAT, 0, guiTexCoords);
-        glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
-    glPopMatrix();
+    if(![eaglViewController getIsSelectingPeg]){
+        glPushMatrix();
+            glTranslatef(412.0f, 68.0f, 0.0f);
+            glBindTexture(GL_TEXTURE_2D, guiTextures[0]);
+            glVertexPointer(2, GL_FLOAT, 0, guiVerts);
+            glTexCoordPointer(2, GL_FLOAT, 0, guiTexCoords);
+            glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+        glPopMatrix();
+    }else{
+        glPushMatrix();
+            glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+            glColor4f(0.2f, 0.2f, 0.2f, 0.8f);
+            glTranslatef(240.0f, 160.0f, 0.0f);
+            glVertexPointer(2, GL_FLOAT, 0, fadeVerts);
+            glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+            glColor4f(1.0f, 1.0f, 1.0f, 1.0f);
+            glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+        glPopMatrix();
+        glPushMatrix();
+            glTranslatef(240.0f, 160.0f, 0.0f);
+            glBindTexture(GL_TEXTURE_2D, guiTextures[1]);
+            glVertexPointer(2, GL_FLOAT, 0, selectVerts);
+            glTexCoordPointer(2, GL_FLOAT, 0, selectTexCoords);
+            glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+        glPopMatrix();
+        for(int x = P_SQUARE; x < P_PLUS + 1; x++){
+            glPushMatrix();
+                glTranslatef((x - P_SQUARE) * 61.0f + 148.0f, 169.0f, 0.0f);
+                glBindTexture(GL_TEXTURE_2D, textures[x]);
+                glVertexPointer(2, GL_FLOAT, 0, verts);
+                glTexCoordPointer(2, GL_FLOAT, 0, texCoords);	
+                glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+            glPopMatrix();
+        }
+    }
     
 	//////////////////////////////////////////////////////////
     glDisable(GL_TEXTURE_2D);

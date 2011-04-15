@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface MainMenuViewController : UIViewController {
     
 }
+
+- (IBAction)levelSelect;
 
 @end

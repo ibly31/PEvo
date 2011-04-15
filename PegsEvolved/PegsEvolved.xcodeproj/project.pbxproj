@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		77055B4D135267DD0026A7B6 /* Level6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 77055B4C135267DD0026A7B6 /* Level6.txt */; };
 		77055B54135276330026A7B6 /* ChoosePegFWX.png in Resources */ = {isa = PBXBuildFile; fileRef = 77055B53135276330026A7B6 /* ChoosePegFWX.png */; };
 		7716721C134FCD1B00C3A878 /* Original0.png in Resources */ = {isa = PBXBuildFile; fileRef = 77167214134FCD1B00C3A878 /* Original0.png */; };
 		7716721D134FCD1B00C3A878 /* Original1.png in Resources */ = {isa = PBXBuildFile; fileRef = 77167215134FCD1B00C3A878 /* Original1.png */; };
@@ -22,6 +21,8 @@
 		7716722C134FD84500C3A878 /* Level3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7716722B134FD84500C3A878 /* Level3.txt */; };
 		7716722E134FD88000C3A878 /* Level4.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7716722D134FD88000C3A878 /* Level4.txt */; };
 		77167230134FD90E00C3A878 /* Level5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7716722F134FD90E00C3A878 /* Level5.txt */; };
+		773AED461357CDFE0008E0CE /* Level6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 773AED451357CDFE0008E0CE /* Level6.txt */; };
+		773AED491357CE9A0008E0CE /* Level7.txt in Resources */ = {isa = PBXBuildFile; fileRef = 773AED481357CE9A0008E0CE /* Level7.txt */; };
 		774E1E2D1350082F00A0FC0E /* DirectionalPadFWX.png in Resources */ = {isa = PBXBuildFile; fileRef = 774E1E2C1350082F00A0FC0E /* DirectionalPadFWX.png */; };
 		77BF8C39134E7E0C0020FCD9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BF8C38134E7E0C0020FCD9 /* UIKit.framework */; };
 		77BF8C3B134E7E0C0020FCD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BF8C3A134E7E0C0020FCD9 /* Foundation.framework */; };
@@ -34,10 +35,13 @@
 		77BF8C56134E7EB30020FCD9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77BF8C54134E7EB30020FCD9 /* QuartzCore.framework */; };
 		77BF8C59134E7F140020FCD9 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BF8C58134E7F140020FCD9 /* EAGLView.m */; };
 		77BF8C62134E93BB0020FCD9 /* EAGLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77BF8C61134E93BB0020FCD9 /* EAGLViewController.m */; };
+		77ECC50F1353E1EE002DDB50 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ECC50D1353E1EE002DDB50 /* MainMenuViewController.m */; };
+		77ECC5101353E1EE002DDB50 /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77ECC50E1353E1EE002DDB50 /* MainMenuViewController.xib */; };
+		77ECC5151353E2D4002DDB50 /* LevelSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77ECC5131353E2D3002DDB50 /* LevelSelectViewController.m */; };
+		77ECC5161353E2D4002DDB50 /* LevelSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77ECC5141353E2D3002DDB50 /* LevelSelectViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		77055B4C135267DD0026A7B6 /* Level6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level6.txt; sourceTree = "<group>"; };
 		77055B53135276330026A7B6 /* ChoosePegFWX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChoosePegFWX.png; path = ../GUI/ChoosePegFWX.png; sourceTree = "<group>"; };
 		77167214134FCD1B00C3A878 /* Original0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original0.png; sourceTree = "<group>"; };
 		77167215134FCD1B00C3A878 /* Original1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Original1.png; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		7716722B134FD84500C3A878 /* Level3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level3.txt; sourceTree = "<group>"; };
 		7716722D134FD88000C3A878 /* Level4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level4.txt; sourceTree = "<group>"; };
 		7716722F134FD90E00C3A878 /* Level5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level5.txt; sourceTree = "<group>"; };
+		773AED451357CDFE0008E0CE /* Level6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level6.txt; sourceTree = "<group>"; };
+		773AED481357CE9A0008E0CE /* Level7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Level7.txt; sourceTree = "<group>"; };
 		774E1E2C1350082F00A0FC0E /* DirectionalPadFWX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = DirectionalPadFWX.png; path = ../GUI/DirectionalPadFWX.png; sourceTree = "<group>"; };
 		77BF8C34134E7E0C0020FCD9 /* PegsEvolved.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PegsEvolved.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77BF8C38134E7E0C0020FCD9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -70,6 +76,12 @@
 		77BF8C58134E7F140020FCD9 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
 		77BF8C60134E93BB0020FCD9 /* EAGLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLViewController.h; sourceTree = "<group>"; };
 		77BF8C61134E93BB0020FCD9 /* EAGLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLViewController.m; sourceTree = "<group>"; };
+		77ECC50C1353E1ED002DDB50 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		77ECC50D1353E1EE002DDB50 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		77ECC50E1353E1EE002DDB50 /* MainMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainMenuViewController.xib; path = PegsEvolved/MainMenuViewController.xib; sourceTree = "<group>"; };
+		77ECC5121353E2D3002DDB50 /* LevelSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelSelectViewController.h; sourceTree = "<group>"; };
+		77ECC5131353E2D3002DDB50 /* LevelSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelSelectViewController.m; sourceTree = "<group>"; };
+		77ECC5141353E2D3002DDB50 /* LevelSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LevelSelectViewController.xib; path = PegsEvolved/LevelSelectViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +108,8 @@
 				7716722B134FD84500C3A878 /* Level3.txt */,
 				7716722D134FD88000C3A878 /* Level4.txt */,
 				7716722F134FD90E00C3A878 /* Level5.txt */,
-				77055B4C135267DD0026A7B6 /* Level6.txt */,
+				773AED451357CDFE0008E0CE /* Level6.txt */,
+				773AED481357CE9A0008E0CE /* Level7.txt */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -168,6 +181,10 @@
 		77BF8C3E134E7E0C0020FCD9 /* PegsEvolved */ = {
 			isa = PBXGroup;
 			children = (
+				77ECC50C1353E1ED002DDB50 /* MainMenuViewController.h */,
+				77ECC50D1353E1EE002DDB50 /* MainMenuViewController.m */,
+				77ECC5121353E2D3002DDB50 /* LevelSelectViewController.h */,
+				77ECC5131353E2D3002DDB50 /* LevelSelectViewController.m */,
 				77BF8C47134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.h */,
 				77BF8C48134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.m */,
 				77BF8C57134E7F140020FCD9 /* EAGLView.h */,
@@ -193,12 +210,22 @@
 		77BF8C52134E7E480020FCD9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				77ECC5111353E1FF002DDB50 /* Interfaces */,
 				774E1E22134FFE6B00A0FC0E /* GUI */,
 				77283F92134EA2A70074A10A /* Themes */,
 				77BF8C3F134E7E0D0020FCD9 /* Supporting Files */,
-				77BF8C4A134E7E0D0020FCD9 /* MainWindow.xib */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		77ECC5111353E1FF002DDB50 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				77ECC50E1353E1EE002DDB50 /* MainMenuViewController.xib */,
+				77ECC5141353E2D3002DDB50 /* LevelSelectViewController.xib */,
+				77BF8C4A134E7E0D0020FCD9 /* MainWindow.xib */,
+			);
+			name = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +291,11 @@
 				7716722E134FD88000C3A878 /* Level4.txt in Resources */,
 				77167230134FD90E00C3A878 /* Level5.txt in Resources */,
 				774E1E2D1350082F00A0FC0E /* DirectionalPadFWX.png in Resources */,
-				77055B4D135267DD0026A7B6 /* Level6.txt in Resources */,
 				77055B54135276330026A7B6 /* ChoosePegFWX.png in Resources */,
+				77ECC5101353E1EE002DDB50 /* MainMenuViewController.xib in Resources */,
+				77ECC5161353E2D4002DDB50 /* LevelSelectViewController.xib in Resources */,
+				773AED461357CDFE0008E0CE /* Level6.txt in Resources */,
+				773AED491357CE9A0008E0CE /* Level7.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +310,8 @@
 				77BF8C49134E7E0D0020FCD9 /* PegsEvolvedAppDelegate.m in Sources */,
 				77BF8C59134E7F140020FCD9 /* EAGLView.m in Sources */,
 				77BF8C62134E93BB0020FCD9 /* EAGLViewController.m in Sources */,
+				77ECC50F1353E1EE002DDB50 /* MainMenuViewController.m in Sources */,
+				77ECC5151353E2D4002DDB50 /* LevelSelectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
